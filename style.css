@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.header-section {
+  padding: 0 4.5rem;
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+}
+.header-section .nav-bar {
+  height: 5.75rem;
+  max-width: 81rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125rem 3rem;
+  background: #FFFFFF;
+  align-items: center;
+  box-shadow: 0px 4px 25px 0px rgba(107, 107, 107, 0.08);
+  border-radius: 0.75rem;
+}
+.header-section .nav-bar .nav-logo-and-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.header-section .nav-bar .nav-logo-and-links .nav-logo {
+  display: flex;
+  align-items: center;
+}
+.header-section .nav-bar .nav-logo-and-links .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.header-section .nav-bar .nav-logo-and-links .nav-links li a {
+  text-decoration: none;
+  color: #8E8E8E;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.header-section .nav-bar .nav-social-media-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.header-section .nav-bar .nav-social-media-links p {
+  color: #8E8E8E;
+  font-size: 14px;
+  font-weight: 400;
+}
+.header-section .nav-bar .nav-social-media-links .btn-primary {
+  color: #FCFCFC;
+  background: #EA5A43;
+  padding: 12px 32px;
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0px 9px 25px 0px rgba(234, 90, 67, 0.35);
+  border: none;
+  cursor: pointer;
+}
+
+.bg-section {
+  background: url("./images/Group 1260.png");
+  width: 100%;
+  height: 220px;
+  opacity: 0.05;
+}
+
+.banner-section {
+  padding: 0 4.5rem 0 4.4969rem;
+  position: absolute;
+  top: 157px;
+  left: 0;
+  right: 0;
+}
+.banner-section .banner {
+  background: linear-gradient(0deg, #FFC9C0 0%, #FFE8E4 100%);
+  max-width: 81rem;
+  margin: auto;
+  height: 64px;
+  border-radius: 34px;
+  background: url("./images/offer bg.png");
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125rem 3rem;
+  align-items: center;
+}
+.banner-section .banner .spacial-offer {
+  display: flex;
+  align-items: center;
+}
+.banner-section .banner .spacial-offer p {
+  color: #171716;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 0.75rem;
+}
+.banner-section .banner .spacial-offer button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 700;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding-left: 0.875rem;
+  color: #EA5A43;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.banner-section .banner .spacial-offer-text {
+  color: #171716;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.shop-card-and-listing-section {
+  padding: 3rem 4.5rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing-section-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #22272E;
+}
+.shop-card-and-listing-section .shop-card-and-listing {
+  display: flex;
+  gap: 2.625rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing {
+  min-width: 17.625rem;
+  padding-top: 3.0625rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6B6B6B;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS p::before {
+  position: absolute;
+  content: "";
+  width: 0.125rem;
+  height: 1rem;
+  background: #6B6B6B;
+  left: 3.75rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS ul {
+  padding-top: 2.0625rem;
+  list-style: none;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS ul li {
+  color: #8E8E8E;
+  font-size: 16px;
+  font-weight: 400;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS ul li:nth-child(2) {
+  padding-top: 1.5rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES {
+  padding-top: 3.0625rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES span {
+  color: #8E8E8E;
+  font-size: 14px;
+  font-weight: 400;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES p {
+  max-width: 12.3963rem;
+  color: #8E8E8E;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES .SERVICES-CATEGORIES-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6B6B6B;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES .SERVICES-CATEGORIES-title::before {
+  position: absolute;
+  content: "";
+  width: 0.125rem;
+  height: 1rem;
+  background: #6B6B6B;
+  left: 3.75rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES .title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.0625rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES .title h5 {
+  color: #171716;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES .Computer-Guided {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.125rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES .Computer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form {
+  padding-top: 3.0625rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .SELLER {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .SELLER p {
+  color: #6B6B6B;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.0625rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .SELLER .selle::before {
+  position: absolute;
+  content: "";
+  width: 0.125rem;
+  height: 1rem;
+  background: #6B6B6B;
+  left: 3.75rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .SELLER .Clear {
+  font-weight: 500;
+  color: #1A90D2;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .Voxel {
+  padding-top: 2.0625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .form-check {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .form-check-input {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 0.25rem;
+  border: 0.125rem solid gray;
+  cursor: pointer;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .form-check-label {
+  color: #8E8E8E;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card {
+  width: 306px;
+  max-height: 521px;
+  border-radius: 16px;
+  border: 2px solid #E9E9E9;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card:nth-child(odd)::before {
+  position: absolute;
+  content: "BEST SELLER";
+  padding: 8px 24px;
+  border-radius: 14px 0px 20px 0px;
+  background: #EC9915;
+  color: #FFFFFF;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card:nth-child(2) .card-content .btns .btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 22.375rem;
+  width: 16.125rem;
+  background: #1A90D2;
+  color: #FFFFFF;
+  border: none;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card:nth-child(2) .card-content .btns .btn span {
+  display: inherit;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card:nth-child(3) .card-content .btns .btn {
+  width: 16.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  display: inherit;
+  border: 1px solid #A8EEC4;
+  background: #EDFDF3;
+  color: #00966D;
+  font-size: 12px;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-img {
+  max-width: 258px;
+  height: 258px;
+  background: #F5F5F5;
+  margin: auto;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content {
+  padding: 1rem 1.5rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content .Implant-Planning h6 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #171716;
+  line-height: 28px;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content .Implant-Planning h5 {
+  padding-top: 0.5rem;
+  color: #171716;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content .Implant-Planning h5 span {
+  color: #8E8E8E;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration-line: line-through;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content .Implant-Planning p {
+  padding-top: 0.5rem;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #8E8E8E;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content .mere-details {
+  padding-top: 0.8125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #EA5A43;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content .mere-details span {
+  display: inline-flex;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content .btns {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content .btns .icon-btn {
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background: #1A90D2;
+  border: none;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content .btns .btn {
+  cursor: pointer;
+  border: 2px solid #A8D5EE;
+  background: none;
+  color: #1A90D2;
+  font-size: 16px;
+  font-weight: 500;
+  width: 194px;
+  height: 3.25rem;
+  border-radius: 0.5rem;
+}
+
+.newsletter-section {
+  background: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  height: 182px;
+  align-items: center;
+  padding: 0 4.5rem;
+}
+.newsletter-section .Subscribe {
+  display: flex;
+  align-items: center;
+  gap: 2.0306rem;
+}
+.newsletter-section .Subscribe .Subscribe-content h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #171716;
+}
+.newsletter-section .Subscribe .Subscribe-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6B6B6B;
+  line-height: 24px;
+}
+.newsletter-section .input {
+  width: 554px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+}
+.newsletter-section .input input {
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  width: 100%;
+  height: 64px;
+  font-size: 16px;
+  padding-right: 12rem;
+  padding-left: 1.5rem;
+}
+.newsletter-section .input ::-moz-placeholder {
+  font-weight: 500;
+  color: #8E8E8E;
+  font-size: 1rem;
+}
+.newsletter-section .input ::placeholder {
+  font-weight: 500;
+  color: #8E8E8E;
+  font-size: 1rem;
+}
+.newsletter-section .input button {
+  position: absolute;
+  right: 0;
+  width: 10.875rem;
+  height: 3.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  top: 0.375rem;
+  background: #1A90D2;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.footer {
+  padding: 0 4.5rem;
+  background: #FFFFFF;
+}
+.footer .footer-top {
+  padding: 5rem 0 7.75rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.0625rem solid #E7E5EA;
+}
+.footer .footer-top .fot-logo p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8E8E8E;
+  padding-top: 0.9375rem;
+}
+.footer .footer-top .fot-links ul {
+  list-style: none;
+}
+.footer .footer-top .fot-links ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #171716;
+  line-height: 24px;
+}
+.footer .footer-top .fot-links ul li:nth-child(2) {
+  padding-top: 1.25rem;
+}
+.footer .footer-top .fot-links ul li:nth-child(3) {
+  padding-top: 1rem;
+}
+.footer .footer-top .fot-links ul li:nth-child(4) {
+  padding-top: 1rem;
+}
+.footer .footer-top .fot-links ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6B6B6B;
+}
+.footer .footer-top .fot-contact p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #171716;
+}
+.footer .footer-top .fot-contact .contact {
+  padding-top: 1.25rem;
+}
+.footer .footer-top .fot-contact .contact-info {
+  padding-top: 1rem;
+}
+.footer .footer-top .fot-contact .contact, .footer .footer-top .fot-contact .contact-info {
+  display: flex;
+  gap: 1rem;
+}
+.footer .footer-top .fot-contact .contact a, .footer .footer-top .fot-contact .contact p, .footer .footer-top .fot-contact .contact-info a, .footer .footer-top .fot-contact .contact-info p {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6B6B6B;
+}
+.footer .footer-top .fot-sociol p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #171716;
+}
+.footer .footer-top .fot-sociol .sociol-icon {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.footer .footer-buttom {
+  padding: 2.875rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-buttom p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #8E8E8E;
+}
+.footer .footer-buttom ul {
+  list-style: none;
+  display: flex;
+  gap: 3.8125rem;
+}
+.footer .footer-buttom ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6B6B6B;
+}/*# sourceMappingURL=style.css.map */

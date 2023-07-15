@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import "variable";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $RubikFont;
+}
+.header-section{
+    padding: 0 4.5rem;
+    position: fixed;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
+    .nav-bar{
+        height: 5.75rem;
+        max-width: 81rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.125rem 3rem;
+        background: $bodyColor;
+        align-items: center;
+        box-shadow: 0px 4px 25px 0px rgba(107, 107, 107, 0.08);
+        border-radius: .75rem;
+        .nav-logo-and-links{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            .nav-logo{
+                display: flex;
+                align-items: center;
+            }
+            .nav-links{
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $NeutralGrey-01;
+                        font-weight: $regular;
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+        .nav-social-media-links{
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            p{
+                color: $NeutralGrey-01;
+                font-size: 14px;
+                font-weight: $regular;
+                
+            }
+            .btn-primary{
+                color: $neutral-grey-05;
+                background: $primaryMainColor;
+                padding: 12px 32px;
+                font-size: 14px;
+                border-radius: 8px;
+                box-shadow: 0px 9px 25px 0px rgba(234, 90, 67, 0.35);
+                border: none;
+                cursor: pointer;
+            }
+            
+        }
+    }
+}
+.bg-section{
+    background: url("./images/Group\ 1260.png");
+    width: 100%;
+    height: 220px;
+    opacity: 0.05;
+}
+.banner-section{
+    padding: 0 4.5rem 0 4.4969rem;
+    position: absolute;
+    top: 157px;
+    left: 0;
+    right: 0;
+    .banner{
+        background: linear-gradient(0deg, #FFC9C0 0%, #FFE8E4 100%);
+        max-width: 81rem;
+        margin: auto;
+        height: 64px;
+        border-radius: 34px;
+        background: url("./images/offer\ bg.png");
+        display: flex;
+        justify-content: space-between;
+        padding: 1.125rem 3rem;
+        align-items: center;
+        .spacial-offer{
+            display: flex;
+            align-items: center;
+            p{
+                color: $priceColor;
+                font-size: 16px;
+                font-weight: $regular;
+                padding-left: .75rem;
+            }
+            button{
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+                font-weight: $bold;
+                background: none;
+                border: none;
+                font-size: 1rem;
+                padding-left: .875rem;
+                color: $primaryMainColor;
+                cursor: pointer;
+                text-decoration-line: underline;
+            }
+        }
+        .spacial-offer-text{
+            color: $priceColor;
+            font-weight: $medium;
+            font-size: 1rem;
+        }
+    }
+    
+}
+.shop-card-and-listing-section{
+    padding: 3rem 4.5rem;
+    .shop-card-and-listing-section-title{
+        font-size: 48px;
+        font-weight: $medium;
+        color: $blackColor;
+    }
+    .shop-card-and-listing{
+        display: flex;
+        gap: 2.625rem;
+        .shop-listing{
+            min-width: 17.625rem;
+            padding-top: 3.0625rem;
+            .DEALS-AND-OFFERS{
+                p{
+                    font-size: 12px;
+                    font-weight: $medium;
+                    color: $TextGrayColor;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        width: 0.125rem;
+                        height: 1rem;
+                        background: $TextGrayColor;
+                        left: 3.75rem;
+                    }
+                }
+                ul{
+                    padding-top: 2.0625rem;
+                    list-style: none;
+                    li{
+                        color: $NeutralGrey-01;
+                        font-size: 16px;
+                        font-weight: $regular;
+                        
+                    }
+                    li:nth-child(2){
+                        padding-top: 1.5rem;
+                    }
+                }
+            }
+            .SERVICES-CATEGORIES{
+                padding-top: 3.0625rem;
+                span{
+                    color: $NeutralGrey-01;
+                    font-size: 14px;
+                    font-weight: $regular;
+                }
+                p{
+                    max-width: 12.3963rem;
+                    color: $NeutralGrey-01;
+                    font-weight: $regular;
+                    font-size: 1rem;
+                }
+                .SERVICES-CATEGORIES-title{
+                    font-size: 12px;
+                    font-weight: $medium;
+                    color: $TextGrayColor;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        width: 0.125rem;
+                        height: 1rem;
+                        background: $TextGrayColor;
+                        left: 3.75rem;
+                    }
+                }
+                .title{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 2.0625rem;
+                    h5{
+                        color: $priceColor;
+                        font-weight: $medium;
+                        font-size: 1rem;
+                    }
+                }
+                .Computer-Guided{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 2.125rem;
+                }
+                .Computer{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 1.5rem;
+                }
+            }
+            .form{
+                padding-top: 3.0625rem;
+                .SELLER{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        color: $TextGrayColor;
+                        font-weight: $medium;
+                        font-size: .75rem;
+                        letter-spacing: 0.0625rem;
+                    }
+                    .selle{
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            width: 0.125rem;
+                            height: 1rem;
+                            background: $TextGrayColor;
+                            left: 3.75rem;
+                        }
+                    }
+                    .Clear{
+                        font-weight: 500;
+                        color: $Secondary-Main;
+                    }
+                }
+                .Voxel{
+                    padding-top: 2.0625rem;
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                }
+                .form-check{
+                    gap: .5rem;
+                    display: flex;
+                    align-items: center;
+                    padding-top: 1.5rem;
+                }
+                .form-check-input{
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 0.25rem;
+                    border: .125rem solid gray;
+                    cursor: pointer;
+                }
+                .form-check-label{
+                    color: $NeutralGrey-01;
+                    font-weight: $regular;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        .shop-cards{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            .shop-card{
+                width: 306px;
+                max-height: 521px;
+                border-radius: 16px;
+                border: 2px solid $NeutralGrey-03;
+                &:nth-child(odd){
+                    &::before{position: absolute;
+                        content: "BEST SELLER";
+                        padding: 8px 24px;
+                        border-radius: 14px 0px 20px 0px;
+                        background: $bgtertiaryColor;
+                        color: $bodyColor;
+                    }
+                    
+                }
+                &:nth-child(2){
+                    .card-content{
+                        .btns{
+                            .btn{
+                                display: flex;
+                                gap: 8px;
+                                align-items: center;
+                                justify-content: center;
+                                width: 22.375rem;
+                                width: 16.125rem;
+                                background: $Secondary-Main;
+                                color: $bodyColor;
+                                border: none;
+                                span{
+                                    display: inherit;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .card-content{
+                        .btns{
+                            .btn{
+                                width: 16.125rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 8px;
+                                display: inherit;
+                                border: 1px solid $SuccessMain-Light;
+                                background: $SuccessMain-Lighter;
+                                color: $success-main-dark;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .card-img{
+                    max-width: 258px;
+                    height: 258px;
+                    background: $NeutralGrey-04;
+                    margin: auto;
+                    margin-top: 1.5rem;
+                    border-radius: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .card-content{
+                    padding: 1rem 1.5rem;
+                    .Implant-Planning{
+                        h6{
+                            font-size: 20px;
+                            font-weight: $regular;
+                            color: $priceColor;
+                            line-height: 28px;
+                        }
+                        h5{
+                            padding-top: .5rem;
+                            color: $priceColor;
+                            font-size: 24px;
+                            font-weight: $medium;
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            
+                            span{
+                                color: $NeutralGrey-01;
+                                font-weight: $regular;
+                                font-size: 1rem;
+                                text-decoration-line: line-through;
+                                
+                            }
+                        }
+                        p{
+                            padding-top: .5rem;
+                            font-style: italic;
+                            font-weight: $regular;
+                            font-size: .875rem;
+                            color: $NeutralGrey-01;
+                        }
+                    }
+                    .mere-details{
+                        padding-top: .8125rem;
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        background: none;
+                        border: none;
+                        font-size: 1rem;
+                        font-weight: $medium;
+                        color: $primaryMainColor;
+                        span{
+                            display: inline-flex;
+                        }
+                        
+                    }
+                    .btns{
+                        padding-top: 1rem;
+                        display: flex;
+                        align-items: center;
+                        gap: .75rem;
+                        .icon-btn{
+                            cursor: pointer;
+                            width: 52px;
+                            height: 52px;
+                            border-radius: 8px;
+                            background: $Secondary-Main;
+                            border: none;
+                        }
+                        .btn{
+                            cursor: pointer;
+                            border: 2px solid $BlueSecondary-Light;
+                            background: none;
+                            color: $Secondary-Main;
+                            font-size: 16px;
+                            font-weight: $medium;
+                            width: 194px;
+                            height: 3.25rem;
+                            border-radius: .5rem;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.newsletter-section{
+    background: $NeutralGrey-04;
+    display: flex;
+    justify-content: space-between;
+    height: 182px;
+    align-items: center;
+    padding: 0 4.5rem;
+    .Subscribe{
+        display: flex;
+        align-items: center;
+        gap: 2.0306rem;
+        .Subscribe-content{
+            h3{
+                font-size: 32px;
+                font-weight: $medium;
+                color: $priceColor;
+            }
+            p{
+                font-size: 16px;
+                font-weight: $regular;
+                color: $TextGrayColor;
+                line-height: 24px;
+                
+            }
+        }
+    }
+    .input{
+        width: 554px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        background: $bodyColor;
+        position: relative;
+        input{
+            border: none;
+            border-radius: 12px;
+            outline: none;
+            width: 100%;
+            height: 64px;
+            font-size: 16px;
+            padding-right: 12rem;
+            padding-left: 1.5rem;
+            
+        }
+        ::placeholder{
+            font-weight: $medium;
+            color: $NeutralGrey-01;
+            font-size: 1rem;
+        }
+        button{
+            position: absolute;
+            right: 0;
+            width: 10.875rem;
+            height: 3.25rem;
+            border-radius: 0.5rem;
+            border: none;
+            top: 0.375rem;
+            background: $Secondary-Main;
+            font-size: 1rem;
+            font-weight: $medium;
+            color: $bodyColor;
+        }
+    }
+}
+.footer{
+    padding: 0 4.5rem;
+    background: $bodyColor;
+    
+    .footer-top{
+        padding: 5rem 0 7.75rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: .0625rem solid $borderColor;
+        .fot-logo{
+            p{
+                font-size: 12px;
+                font-weight: $medium;
+                color: $NeutralGrey-01;
+                padding-top: .9375rem;
+            }
+        }
+        .fot-links{
+            ul{
+                list-style: none;
+                li{
+                    font-size: 1rem;
+                    font-weight: $medium;
+                    color: $priceColor;
+                    line-height: 24px;
+                    &:nth-child(2){
+                        padding-top: 1.25rem;
+                    }
+                    &:nth-child(3){
+                        padding-top: 1rem;
+                    }
+                    &:nth-child(4){
+                        padding-top: 1rem;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-weight: $regular;
+                        font-size: 1rem;
+                        color: $TextGrayColor;
+                        
+                    }
+                }
+            }
+        }
+        .fot-contact{
+            p{
+                font-size: 16px;
+                font-weight: $medium;
+                color: $priceColor;
+            }
+            .contact{
+                padding-top: 1.25rem;
+            }
+            .contact-info{
+                padding-top: 1rem;
+            }
+            .contact, .contact-info{
+                display: flex;
+                gap: 1rem;
+                a, p{
+                    text-decoration: none;
+                    font-weight: $regular;
+                    font-size: 1rem;
+                    color: $TextGrayColor;
+                    
+                }
+            }
+        }
+        .fot-sociol{
+            p{
+                font-weight: $medium;
+                font-size: 1rem;
+                color: $priceColor;
+                
+            }
+            .sociol-icon{
+                display: flex;
+                gap: 1rem;
+                padding-top: 1rem;
+            }
+        }
+    }
+    .footer-buttom{
+        padding: 2.875rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size: 0.875rem;
+            font-weight: $regular;
+            color: $NeutralGrey-01;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 3.8125rem;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: $regular;
+                    color: $TextGrayColor;
+                    
+                }
+            }
+        }
+    }
+}
