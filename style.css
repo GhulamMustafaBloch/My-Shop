@@ -236,16 +236,26 @@
   color: #1A90D2;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .Voxel {
+  max-width: 94px;
   padding-top: 2.0625rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .Voxel:hover .form-check-label {
+  color: #000;
+  font-weight: 600;
+}
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .form-check {
+  max-width: 94px;
   gap: 0.5rem;
   display: flex;
   align-items: center;
   padding-top: 1.5rem;
+}
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .form-check:hover .form-check-label {
+  color: #000;
+  font-weight: 600;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .form-check-input {
   display: block;
